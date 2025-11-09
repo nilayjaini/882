@@ -1,0 +1,17 @@
+superset/
+.terraform/
+.terraform*
+cloud_function.zip
+
+superset/
+.terraform/
+.terraform*
+cloud_function.zip
+
+# 让 Git 忽略本地凭证文件
+streamlit/credentials.json
+.streamlit/
+
+# Python 缓存文件
+__pycache__/
+*.pyc
