@@ -1,3 +1,17 @@
+from google.oauth2 import service_account
+from google.cloud import bigquery
+import streamlit as st
+
+st.title("🚋 MBTA Occupancy Predictor Test")
+
+try:
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"]
+    )
+    client = bigquery.Client(credentials=credentials, project=st.secrets["gcp_service_account"]["project_id"])
+    st.success("✅ Connected to BigQuery successfully!")
+except Exception as e:
+    st.error(f"❌ BigQuery connection failed: {e}")
 import os
 import pandas as pd
 import streamlit as st
