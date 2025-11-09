@@ -1,24 +1,10 @@
-# Core web app
-streamlit==1.39.0
-
-# Data handling
-pandas==2.2.3
-numpy==1.26.4
-
-# Google Cloud SDKs
-google-cloud-bigquery==3.25.0
-google-cloud-core==2.4.1
-google-auth==2.35.0
-google-auth-oauthlib==1.2.1
-google-auth-httplib2==0.2.0
-
-# Machine Learning
-scikit-learn==1.5.2
-
-# Visualization
-matplotlib==3.9.2
-plotly==5.24.1
-
-# Caching / utilities
-protobuf==5.27.3
-requests==2.32.3
+streamlit
+pandas
+pydeck
+altair
+google-cloud-bigquery
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-cloud-storage
+db-dtypes
