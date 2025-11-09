@@ -67,7 +67,7 @@ use_avail = st.sidebar.checkbox(
 st.sidebar.markdown("---")
 page = st.sidebar.radio(
     "Pages",
-    [ "Review_BB", "Overview","Summary", "Recommendations", "Bluebikes Clustering", "Bluebikes Demand Prediction", "Availability", ]
+    [ "Review_BB", "Overview","Summary", "Recommendations", "Bluebikes Clustering", "Bluebikes Demand Prediction", "Availability","Occupancy Prediction" ]
 )
 
 # ----------------------- SQL (Coverage) -----------------------
@@ -1213,12 +1213,5 @@ elif page == "Occupancy Prediction":
                     st.warning("No prediction result returned from BigQuery ML model.")
             except Exception as e:
                 st.error(f"Error running ML prediction: {e}")
-page = st.sidebar.radio(
-    "Pages",
-    [
-        "Review_BB", "Overview", "Summary", "Recommendations",
-        "Bluebikes Clustering", "Bluebikes Demand Prediction",
-        "Availability", "Occupancy Prediction"   # 👈 add this line
-    ]
-)
+
 
